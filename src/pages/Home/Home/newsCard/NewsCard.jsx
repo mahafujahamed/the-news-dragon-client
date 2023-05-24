@@ -30,7 +30,7 @@ const NewsCard = ({news}) => {
                     }
                 </Card.Text>
             </Card.Body>
-            <Card.Footer className="text-muted">
+            <Card.Footer className="text-muted d-flex">
                 <div className='flex-grow-1'>
                     <span>{rating?.number}</span>
                 </div>

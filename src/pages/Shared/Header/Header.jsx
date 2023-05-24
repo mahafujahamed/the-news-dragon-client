@@ -6,9 +6,9 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
     return (
-        <Container>
-            <div className="text-center">
-                <img src={logo} alt="" />
+        <Container className='mb-4'>
+            <div className="text-center mb-4">
+                <img className='mt-4' src={logo} alt="" />
                 <p className='text-secondary'>
                     <smalll>Journalism Without Fear or Favour</smalll>
                 </p>
