@@ -8,7 +8,7 @@ const Catagory = () => {
 
     return (
         <div>
-            <h2>Dragon News: {catagoryNews.length}</h2>
+            { id && <h2>Dragon News: {catagoryNews.length}</h2>}
             {
                 catagoryNews.map(news => 
                 <NewsCard
