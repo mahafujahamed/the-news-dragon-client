@@ -15,6 +15,14 @@ const Register = () => {
         const password = form.password.value;
         const accept = form.accept.checked;
         
+        createUser(email, password)
+        .then(result => {
+            const createdUser = result.user;
+
+        })
+        .catch(error => {
+            console.log(error);
+        })
     }
     return (
         <Container className='w-25 mx-auto'>
