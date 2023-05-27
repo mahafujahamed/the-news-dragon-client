@@ -62,7 +62,7 @@ const Register = () => {
                 <Button disabled={!accept} variant="primary" type="submit">
                     Register
                 </Button>
-                <br />
+                <br />  
                 <Form.Text className='text-secondary'>
                     Already have an account? <Link to="/login">Login</Link>
                 </Form.Text>
