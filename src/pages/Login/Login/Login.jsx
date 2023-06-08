@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
+import useTitle from '../../../hooks/useTitle';
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
@@ -15,6 +16,7 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
+        useTitle('Login')
         signIn(email, password)
         .then(result => {
             const loggedUser = result.user;
